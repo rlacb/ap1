@@ -1,0 +1,41 @@
+﻿@page "/roles"
+@inject HttpClient Http
+
+<PageTitle>Roles and Responsibilities of a
+    Tour Guide</PageTitle>
+
+<h1>Tour Guide</h1>
+
+<p>This component demonstrates Roles and Responsibilities of a
+    Tour Guide</p>
+
+<!-- AR.js script -->
+
+<div id="ar-container" style="display: none;" onload="document.querySelector('a-scene').style.display='none';">
+    @if (isArVisible)
+    {
+        <a-scene embedded arjs="markersAreaEnabled: true;">
+            <!-- Define a camera that moves according to the marker position -->
+            <a-marker type="pattern"
+                url="https://cdn.rawgit.com/jeromeetienne/AR.js/master/three.js/examples/marker-training/examples/pattern-files/pattern-hiro.patt">
+                <!-- Add your AR content here -->
+                <a-entity position="0 0 0" scale="0.05 0.05 0.05"
+                    gltf-model="https://cdn.jsdelivr.net/gh/KhronosGroup/glTF-Sample-Models/2.0/Duck/glTF/Duck.gltf"></a-entity>
+                <a-box position="0 0.5 0" material="opacity: 0.5;"></a-box>
+            </a-marker>
+            <a-entity camera></a-entity>
+        </a-scene>
+    }
+</div>
+
+<button @onclick="OnButtonClick">Start Roles and Responsibilities</button>
+
+
+@code {
+    private bool isArVisible = false;
+
+    private void OnButtonClick()
+    {
+        isArVisible = true;
+    }
+}
