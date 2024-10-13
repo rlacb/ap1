@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DPHSCAN")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3e314ee77452b1d3689aec37f20c0d7a57747d16")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f0b14cfc447d1f9b8e474fd51eb37d03e309764c")]
 [assembly: System.Reflection.AssemblyProductAttribute("DPHSCAN")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DPHSCAN")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
